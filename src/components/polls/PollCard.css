@@ -1,0 +1,140 @@
+.poll-card,
+.poll-card-no-hover {
+	width: 65%;
+	border: 0.5px solid lightgray;
+	background-color: #eee;
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	transition: 0.15s;
+	max-height: 80%;
+	overflow-y: auto;
+}
+
+.poll-card.voters {
+	width: 40%;
+	max-height: 70%;
+	position: fixed;
+	pointer-events: none;
+}
+
+.poll-card:hover {
+	background-color: #E2E6E9;
+	cursor: pointer;
+}
+
+.poll-card *,
+.poll-card-no-hover * {
+	color: #333;
+	margin: 0.2rem;
+	padding: 0.3rem;
+	word-spacing: 2px;
+	letter-spacing: 0.3px;
+	line-height: 1.5rem;
+}
+
+.poll-card > * ,
+.poll-card-no-hover > *{
+	text-align: center;
+}
+
+.poll-card button {
+	padding: 0.6rem;
+	max-width: 130px;
+}
+
+.poll-card-no-hover button {
+	width: 50%;
+	margin: 0 auto;
+	min-width: 3rem;
+}
+
+.poll-card-desc {
+	font-size: 0.9rem;
+}
+
+.poll-card-body {
+	border-top: 1px solid lightgray;
+}
+
+.poll-option {
+	display: grid;
+	grid-template-columns: 3fr 1fr;  
+	border-radius: 0.5rem;
+}
+
+.poll-option-hoverable {
+	display: grid;
+	grid-template-columns: 4fr 2fr 1fr;
+	border-radius: 0.5rem;
+	transition: 0.15s;
+}
+
+.poll-option-hoverable:hover {
+	background-color: #E2E6E9;
+	cursor: pointer;
+}
+
+.poll-option-name {
+	text-align: left;
+}
+
+.poll-option-votes {
+	text-align: right;
+}
+
+.poll-options {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr) 1fr;  
+	margin: 0.5rem;
+	gap: 0.5rem;
+}
+
+.poll-options * {
+	font-size: 0.85rem;
+}
+
+.poll-options input[type=text] {
+	font-size: 0.85rem;
+	padding: 0.1rem 0.5rem;
+}
+
+.poll-option-modify,
+.poll-option-added {
+	display: grid;
+	gap: 0.5rem;
+	border-radius: 0.5rem;
+	margin: 1% 8%;
+}
+
+.poll-option-modify {
+	grid-template-columns: 8fr 1fr;
+}
+
+.poll-option-added {
+	grid-template-columns: 1fr 7fr 1fr;
+}
+
+.poll-option-added input[type=text] {
+	font-size: 0.9rem;
+	padding: 0.1rem 0.5rem;
+	margin: 2.5% 0;
+}
+
+.x-button {
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding: 0rem;
+	background-color: transparent;
+	color: #A44A3F;
+	border: 0px;
+}
+
+.x-button:hover {
+	color: #bf6357;
+	background-color: transparent;
+}
+
+.poll-option-modify.removed {
+	background-color: #eac9c7;
+}

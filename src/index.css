@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.center,
+.center-shrink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.center-shrink {
+  max-width: 55%;
+}
+
+.center-horizontal {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.box, 
+button {
+  width: 50%;
+  background-color: #eee;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  transition: 0.15s;
+}
+
+.box {
+  border: 0.5px solid lightgray;
+  padding: 1.5rem 0;
+}
+
+button {
+  width: 30%;
+  font-weight: bold;
+  background-color: #A8B3BD;
+  border: 1px solid slategray;
+}
+
+li a:hover {
+	background-color: #ccc;
+}
+
+button:hover {
+  background-color: #92A0AD;
+  cursor: pointer;
+}
+
+button.disabled {
+  color: #999;
+  background-color: #d4d9de;
+  border: 0.5px solid #9ba6b1;
+  pointer-events: none;
+}
+
+input[type=text],
+input[type=password] {
+  border-radius: 0.3rem;
+  border: 0.5px solid #333;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+label {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.box > * {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.box * {
+  margin: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+}
+
+.row > * {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  margin: 1rem 2rem;
+  gap: 1rem;
+}
+
+.no-hover {
+	pointer-events: none;
+}
+
+.backpanel {
+  background: rgb(0, 0, 0);
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 30;
+}
+
+.front {
+  z-index: 50;
+}

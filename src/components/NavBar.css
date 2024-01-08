@@ -1,0 +1,35 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #eee;
+	border-bottom: 0.2px solid lightgray;
+}
+
+li {
+	float: left;
+}
+
+ul > *:nth-last-child(-n+2) {
+	float: right;
+}
+
+li a {
+	display: block;
+	border-radius: 0.2rem;
+	color: #333;
+	text-align: center;
+	padding: 1rem 1.5rem;
+	font-size: 1.1rem;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.15s;
+}
+
+li a.active {
+	background-color: #A8B3BD;
+	/* background-color: navajowhite; */
+	color: #333;
+}
+  
